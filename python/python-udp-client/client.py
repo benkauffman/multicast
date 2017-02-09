@@ -3,7 +3,7 @@ import struct
 import sys
 
 acknowledge = False
-multicast_group = '224.3.29.71'
+multicast_group = '226.1.1.1'
 server_address = ('', 10000)
 
 # Create the socket

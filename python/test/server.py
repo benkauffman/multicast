@@ -8,7 +8,7 @@ M_ADDR = "224.168.2.9"
 M_PORT = 1600
 
 sock = socket.socket(socket.AF_INET,socket.SOCK_DGRAM,socket.IPPROTO_UDP)
-sock.setsockopt(socket.SOL_SOCKET,socket.SO_REUSEPORT,1)
+sock.setsockopt(socket.SOL_SOCKET,socket.SO_REUSEADDR,1)
 sock.bind((ANY,S_PORT))
 sock.setsockopt(socket.IPPROTO_IP,socket.IP_MULTICAST_TTL,255)
 
